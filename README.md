@@ -55,50 +55,148 @@ Aplikasi menggunakan sistem multi-page navigation dengan Navigator untuk berpind
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/67781337-f955-4058-abc6-3b269d6701c9" />
 
 WIDGET YANG DIGUNAKAN
--MaterialApp
-Digunakan sebagai root aplikasi dan untuk mengatur tema serta halaman awal aplikasi.
+1. MaterialApp
 
--Scaffold
-Menjadi struktur utama halaman yang berisi AppBar, body, dan FloatingActionButton.
+Widget utama untuk menjalankan aplikasi berbasis Material Design.
+Digunakan untuk mengatur tema aplikasi seperti light mode dan dark mode, serta menentukan halaman awal aplikasi.
 
--AppBar
-Menampilkan judul halaman pada bagian atas aplikasi.
+2. Scaffold
 
--ListView.builder
-Digunakan untuk menampilkan daftar layanan secara dinamis berdasarkan jumlah data yang tersedia.
+Widget dasar yang menyediakan struktur tampilan aplikasi seperti AppBar, Body, dan FloatingActionButton.
 
--Card
-Menampilkan setiap layanan dalam bentuk kartu agar tampilan lebih terstruktur dan rapi.
+3. AppBar
 
--ListTile
-Digunakan untuk menyusun elemen dalam Card seperti ikon, judul, deskripsi, dan tombol aksi.
+Digunakan sebagai header aplikasi yang berada di bagian atas layar dan menampilkan judul halaman serta tombol dark mode.
 
--CircleAvatar
-Digunakan untuk menampilkan ikon kategori layanan dengan latar belakang berwarna.
+4. Text
 
--Icon dan IconButton
-Digunakan sebagai tombol aksi seperti edit dan delete serta sebagai ikon kategori layanan.
+Widget untuk menampilkan teks seperti:
 
--FloatingActionButton
-Digunakan untuk menambahkan layanan baru.
+Judul halaman
 
--Navigator
-Digunakan untuk navigasi antar halaman serta mengirim dan menerima data.
+Nama layanan
 
--Form
-Digunakan untuk membungkus input agar dapat dilakukan validasi sebelum data disimpan.
+Kategori layanan
 
--TextFormField
-Digunakan untuk input teks seperti nama layanan, alamat, dan deskripsi.
+Alamat layanan
 
--DropdownButtonFormField
-Digunakan untuk memilih kategori layanan.
+Deskripsi layanan
 
--ElevatedButton
-Digunakan sebagai tombol untuk menyimpan data.
+5. TextField
 
--GlobalKey<FormState>
-Digunakan untuk mengontrol dan melakukan validasi form.
+Digunakan untuk menerima input dari pengguna, seperti:
+
+Username
+
+Password
+
+Nama layanan
+
+Alamat layanan
+
+Deskripsi layanan
+
+6. ElevatedButton
+
+Tombol yang digunakan untuk menjalankan aksi seperti:
+
+Login
+
+Register
+
+Simpan data layanan
+
+7. TextButton
+
+Digunakan untuk tombol navigasi seperti berpindah dari Login ke Register.
+
+8. ListView.builder
+
+Widget yang digunakan untuk menampilkan daftar layanan secara dinamis dari database Supabase.
+
+9. Card
+
+Digunakan untuk menampilkan setiap layanan dalam bentuk kartu agar tampilan lebih rapi dan terpisah.
+
+10. ListTile
+
+Widget yang memudahkan penyusunan tampilan list dengan komponen:
+
+ikon
+
+judul
+
+subtitle
+
+aksi tombol
+
+11. CircleAvatar
+
+Digunakan untuk menampilkan ikon kategori layanan dengan background warna.
+
+12. Icon
+
+Widget untuk menampilkan ikon seperti:
+
+ikon kategori layanan
+
+ikon edit
+
+ikon delete
+
+ikon dark mode
+
+13. IconButton
+
+Digunakan sebagai tombol berbentuk ikon untuk:
+
+mengedit layanan
+
+menghapus layanan
+
+mengaktifkan dark mode
+
+14. FloatingActionButton
+
+Tombol bulat yang digunakan untuk menambahkan layanan baru.
+
+15. DropdownButtonFormField
+
+Widget untuk menampilkan pilihan kategori layanan seperti:
+
+Kesehatan
+
+Pendidikan
+
+Administrasi
+
+Transportasi
+
+Keamanan
+
+16. AlertDialog
+
+Digunakan untuk menampilkan form tambah dan edit layanan dalam bentuk pop-up dialog.
+
+17. Column
+
+Widget untuk menyusun komponen secara vertikal.
+
+18. Row
+
+Digunakan untuk menyusun widget secara horizontal, misalnya tombol edit dan delete.
+
+19. Padding
+
+Memberikan jarak antara widget dengan tepi layar agar tampilan lebih rapi.
+
+20. SizedBox
+
+Digunakan untuk memberikan jarak antar widget.
+
+21. RefreshIndicator
+
+Widget yang memungkinkan pengguna melakukan refresh data dengan swipe ke bawah.
 
 
 
