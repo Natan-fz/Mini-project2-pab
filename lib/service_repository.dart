@@ -1,32 +1,50 @@
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'service_model.dart';
 
 class ServiceRepository {
-  final List<Service> _services = [
-    Service(
-      nama: "Disdukcapil Samarinda",
-      alamat: "Jl. Dahlia No. 12, Samarinda",
-      kategori: "Administrasi Kependudukan",
-      deskripsi: "Pembuatan KTP, KK, Akta Kelahiran dan dokumen identitas.",
-    ),
-    Service(
-      nama: "SMP Negeri 1 Samarinda",
-      alamat: "Jl. KH Khalid, Samarinda",
-      kategori: "Pelayanan Pendidikan",
-      deskripsi: "Sekolah negeri dan fasilitas belajar.",
-    ),
-  ];
 
-  List<Service> getServices() => _services;
+  final supabase = Supabase.instance.client;
 
-  void add(Service service) {
-    _services.add(service);
+  Future<List<Service>> getServices() async {
+    try {
+      final data = await supabase
+          .from('services')
+          .select()
+          .order('id');
+
+      return data.map<Service>((e) => Service.fromMap(e)).toList();
+    } catch (e) {
+      throw Exception("Gagal mengambil data");
+    }
   }
 
-  void update(int index, Service service) {
-    _services[index] = service;
+  Future<void> addService(Service service) async {
+    try {
+      await supabase.from('services').insert(service.toMap());
+    } catch (e) {
+      throw Exception("Gagal menambah data");
+    }
   }
 
-  void delete(int index) {
-    _services.removeAt(index);
+  Future<void> updateService(Service service) async {
+    try {
+      await supabase
+          .from('services')
+          .update(service.toMap())
+          .eq('id', service.id!);
+    } catch (e) {
+      throw Exception("Gagal update data");
+    }
+  }
+
+  Future<void> deleteService(int id) async {
+    try {
+      await supabase
+          .from('services')
+          .delete()
+          .eq('id', id);
+    } catch (e) {
+      throw Exception("Gagal hapus data");
+    }
   }
 }
