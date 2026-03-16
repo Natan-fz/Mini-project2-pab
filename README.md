@@ -8,23 +8,34 @@ Setiap layanan yang ditampilkan memiliki beberapa atribut utama, yaitu nama laya
 
 1. Menampilkan Daftar Layanan (Read)
 Aplikasi menampilkan seluruh data layanan yang tersedia dalam bentuk daftar menggunakan ListView.builder.
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/cef45680-758e-4679-b254-82f373178e9f" />
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/43999adb-25f1-4484-bdf3-ed61d1575967" />
 
 
 3. Menambahkan Data Layanan (Create)
 Pengguna dapat menambahkan layanan baru melalui halaman form dengan mengisi seluruh field yang tersedia.
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fd6ccb45-ab8c-424e-9cc3-2ff935167f47" />
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b3733b15-c5ec-444b-832f-667911aabb9f" />
+
+<img width="1912" height="1079" alt="image" src="https://github.com/user-attachments/assets/f1ee02f8-9e20-4d3b-94e8-38d765dc3d10" />
+
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/0333b25e-a5b5-4b61-9933-3b58cfb7bcf7" />
+
 
 
 5. Mengubah Data Layanan (Update)
 Pengguna dapat mengedit data layanan yang telah ada dengan menekan tombol edit pada masing-masing item layanan.
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/0d66cdf3-2048-45c6-99c9-ca8904ec5028" />
+
+<img width="1917" height="1079" alt="image" src="https://github.com/user-attachments/assets/5a115818-037f-4620-918d-6c98d75286f7" />
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/698b3acd-fda4-48e3-9e0c-ff0d6c9c095a" />
+
 
 
 6. Menghapus Data Layanan (Delete)
 Pengguna dapat menghapus layanan dari daftar dengan menekan tombol delete.
-<img width="1914" height="1072" alt="image" src="https://github.com/user-attachments/assets/e8f6e66c-78c2-4836-81a7-9a064f5e1f5d" />
+
+<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/2dc8f2ef-af3d-4aa1-8f09-1da9ddad8ce9" />
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/557d8955-b303-4ceb-adae-3709c6ad6e17" />
 
 
 7. Kategori dengan Ikon dan Warna Berbeda
@@ -32,6 +43,16 @@ Setiap kategori layanan memiliki ikon dan warna yang berbeda untuk membedakan je
 
 8. Navigasi Antar Halaman
 Aplikasi menggunakan sistem multi-page navigation dengan Navigator untuk berpindah halaman dan mengirim data kembali ke halaman sebelumnya.
+
+9. login dan register
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/35fb64f1-68a9-4678-9ce7-dbc232ab8d44" />
+
+10. dark mode dan light mode
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/65f75d8e-0803-42bb-bdbf-a1c526477fcb" />
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/67781337-f955-4058-abc6-3b269d6701c9" />
 
 WIDGET YANG DIGUNAKAN
 -MaterialApp
@@ -78,3 +99,8 @@ Digunakan sebagai tombol untuk menyimpan data.
 
 -GlobalKey<FormState>
 Digunakan untuk mengontrol dan melakukan validasi form.
+
+
+
+
+
